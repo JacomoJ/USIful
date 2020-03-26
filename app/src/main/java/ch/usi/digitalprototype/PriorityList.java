@@ -10,5 +10,6 @@ public class PriorityList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_priority_list);
+        // add code about drag and drop
     }
 }
