@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".PriorityList">
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/direction_msg"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <!-- ACTIVITY ICONS -->
+
+    <ImageView
+        android:id="@+id/study"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/study_des"
+        android:src="@drawable/study"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/bicycle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/bicycle_des"
+        app:srcCompat="@drawable/bicycle" />
+
+    <ImageView
+        android:id="@+id/movie"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/movie_des"
+        app:srcCompat="@drawable/movie" />
+
+    <ImageView
+        android:id="@+id/billiard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="220dp"
+        android:contentDescription="@string/billiard_des"
+        app:srcCompat="@drawable/billiard" />
+
+    <ImageView
+        android:id="@+id/dance"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="220dp"
+        android:contentDescription="@string/dance_des"
+        app:srcCompat="@drawable/dance" />
+
+    <ImageView
+        android:id="@+id/restaurant"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="220dp"
+        android:contentDescription="@string/restaurant_des"
+        app:srcCompat="@drawable/restaurant" />
+
+    <ImageView
+        android:id="@+id/gym"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="340dp"
+        android:contentDescription="@string/gym_des"
+        app:srcCompat="@drawable/gym" />
+
+    <ImageView
+        android:id="@+id/videogame"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="340dp"
+        android:contentDescription="@string/videogame_des"
+        app:srcCompat="@drawable/videogame" />
+
+    <ImageView
+        android:id="@+id/yoga"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="340dp"
+        android:contentDescription="@string/yoga_des"
+        app:srcCompat="@drawable/yoga" />
+
+    <!-- PRIORITY ICONS (NUMBERED HOLES) -->
+
+    <ImageView
+        android:id="@+id/position1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/destination_msg"
+        android:src="@drawable/position1"
+        app:srcCompat="@drawable/position1" />
+
+    <ImageView
+        android:id="@+id/position2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/destination_msg"
+        app:srcCompat="@drawable/position2" />
+
+    <ImageView
+        android:id="@+id/position3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/destination_msg"
+        app:srcCompat="@drawable/position3" />
+
+    <ImageView
+        android:id="@+id/position4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="182dp"
+        android:layout_marginLeft="182dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/destination_msg"
+        app:srcCompat="@drawable/position4" />
+
+    <ImageView
+        android:id="@+id/position5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/destination_msg"
+        app:srcCompat="@drawable/position5" />
+
+    <ImageView
+        android:id="@+id/position6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="298dp"
+        android:layout_marginLeft="298dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/destination_msg"
+        app:srcCompat="@drawable/position6" />
+
+    <ImageView
+        android:id="@+id/position7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="356dp"
+        android:layout_marginLeft="356dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/destination_msg"
+        app:srcCompat="@drawable/position7" />
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/confirm_label" />
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Digital Prototype</string>
+    <string name="istagram_logo">INSTAGRAM</string>
+    <string name="discord_label">Discord</string>
+    <string name="instagram_label">Instagram</string>
+    <string name="youtube_label">YouTube</string>
+    <string name="tiktok_label">TikTok</string>
+    <string name="spotify_label">Spotify</string>
+    <string name="cycling">cycling</string>
+    <string name="gym">gym</string>
+    <string name="shopping">shopping</string>
+    <string name="next">NEXT</string>
+    <string name="restaurant_logo">restaurant logo</string>
+    <string name="relax_logo">relax logo</string>
+    <string name="study_logo">study logo</string>
+    <string name="sm_restaurant">sm_restaurant</string>
+    <string name="sm_relax">sm_relax</string>
+    <string name="sm_gym">sm_gym</string>
+    <string name="sm_cycling">sm_cycling</string>
+    <string name="sm_shopping">sm_shopping</string>
+    <string name="confirm_priority">confirm_priority</string>
+    <string name="welcome_message">Welcome to USIful</string>
+    <string name="activity_time_label">Activity Time</string>
+    <string name="priority_list_label">Priority List</string>
+    <string name="usiful_logo_des">USIful</string>
+    <string name="time_tracking_selection_des">Go to activity time tracking selection screen</string>
+    <string name="priority_list_des">Select your own priority list</string>
+    <string name="activities_label">Activities Time</string>
+    <string name="app_usage_label">App usage</string>
+    <string name="activity_resume_label">Activity resume</string>
+    <string name="time_tracking_label">Time Tracking</string>
+
+    <string name="scratch_meg">scratch</string>
+    <string name="study_des">study</string>
+    <string name="destination_msg">destination</string>
+    <string name="bicycle_des">Bicycle</string>
+    <string name="movie_des">Movie</string>
+    <string name="direction_msg">
+        Drag and drop the activity icon in the priority numbered boxes below.
+        Once finished press CONFIRM. Less then 7 priorities are allowed
+    </string>
+    <string name="billiard_des">Billiard</string>
+    <string name="dance_des">Dance</string>
+    <string name="restaurant_des">Restaurant</string>
+    <string name="gym_des">Gymnasium</string>
+    <string name="videogame_des">Videogames</string>
+    <string name="yoga_des">Yoga and relax</string>
+    <string name="confirm_label">Confirm</string>
+    <string name="study_text_msg">Hei Ivan! 25% is too few time</string>
+    <string name="usage_tip_text">Click on the activity icon to see a tip message</string>
+    <string name="movie_text_msg">
+        You have seen too much movie this week my dear Ivan.
+        Consider to complete other tasks as your own priority
+    </string>
+    <string name="gym_text_msg">
+        Ivan health is important.
+        You have to spend more time on sport next week
+    </string>
+    <string name="restaurant_text_msg">
+        You have just almost consumed all the time allocated to restaurant leisure.
+        It\'s time to stop eating outside.
+    </string>
+</resources>
