@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Digital prototype</string>
-    <string name="istagram_logo">INSTAGRAM</string>
-    <string name="discord_label">Discord</string>
-    <string name="instagram_label">Instagram</string>
-    <string name="youtube_label">YouTube</string>
-    <string name="tiktok_label">TikTok</string>
-    <string name="spotify_label">Spotify</string>
-</resources>
