@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PriorityList">
+
+    <ImageView
+        android:id="@+id/big_cycling"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/cycling"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/big_cycling" />
+
+    <ImageView
+        android:id="@+id/big_gym"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@string/gym"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/big_gym" />
+
+    <ImageView
+        android:id="@+id/big_relax"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/relax_logo"
+        app:layout_constraintEnd_toStartOf="@+id/big_gym"
+        app:layout_constraintStart_toEndOf="@+id/big_cycling"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/big_relax" />
+
+    <ImageView
+        android:id="@+id/big_restaurant"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@string/restaurant_logo"
+        app:layout_constraintEnd_toStartOf="@+id/big_study"
+        app:layout_constraintStart_toEndOf="@+id/big_shopping"
+        app:layout_constraintTop_toBottomOf="@+id/big_relax"
+        app:srcCompat="@drawable/big_restaurant" />
+
+    <ImageView
+        android:id="@+id/big_shopping"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/shopping"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_cycling"
+        app:srcCompat="@drawable/big_shopping" />
+
+    <ImageView
+        android:id="@+id/big_study"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@string/study_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_gym"
+        app:srcCompat="@drawable/big_study" />
+
+    <ImageView
+        android:id="@+id/sm_restaurant"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_priority"
+        app:layout_constraintEnd_toStartOf="@+id/sm_shopping"
+        app:layout_constraintStart_toEndOf="@+id/sm_study"
+        app:srcCompat="@drawable/sm_restaurant"
+        android:contentDescription="@string/sm_restaurant" />
+
+    <ImageView
+        android:id="@+id/sm_relax"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_priority"
+        app:layout_constraintEnd_toStartOf="@+id/sm_gym"
+        app:layout_constraintStart_toEndOf="@+id/sm_shopping"
+        app:srcCompat="@drawable/sm_relax"
+        android:contentDescription="@string/sm_relax" />
+
+    <ImageView
+        android:id="@+id/sm_study"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_priority"
+        app:layout_constraintEnd_toStartOf="@+id/sm_restaurant"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sm_study"
+        android:contentDescription="@string/sm_relax"/>
+
+    <ImageView
+        android:id="@+id/sm_gym"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_priority"
+        app:layout_constraintEnd_toStartOf="@+id/sm_cycling"
+        app:layout_constraintStart_toEndOf="@+id/sm_relax"
+        app:srcCompat="@drawable/sm_gym"
+        android:contentDescription="@string/sm_gym"/>
+
+    <ImageView
+        android:id="@+id/sm_cycling"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_priority"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sm_gym"
+        app:srcCompat="@drawable/sm_cycling"
+        android:contentDescription="@string/sm_cycling"/>
+
+    <ImageView
+        android:id="@+id/sm_shopping"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_priority"
+        app:layout_constraintEnd_toStartOf="@+id/sm_relax"
+        app:layout_constraintStart_toEndOf="@+id/sm_restaurant"
+        app:srcCompat="@drawable/sm_shopping"
+        android:contentDescription="@string/sm_shopping" />
+
+    <Button
+        android:id="@+id/confirm_priority"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/next"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/confirm_priority"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
