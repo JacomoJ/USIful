@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".ActTimeTracking">
+
+    <TextView
+        android:id="@+id/usage_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/usage_tip_text" />
+
+    <!--STUDY-->
+    <ProgressBar
+        android:id="@+id/pb_study"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/circular_shape"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="25"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/study"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/pb_study"
+        android:layout_alignLeft="@+id/pb_study"
+        android:layout_alignTop="@+id/pb_study"
+        android:layout_alignEnd="@+id/pb_study"
+        android:layout_alignRight="@+id/pb_study"
+        android:layout_alignBottom="@+id/pb_study"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/study_des"
+        android:onClick="showStudyTip"
+        app:srcCompat="@drawable/study" />
+
+    <TextView
+        android:id="@+id/study_msg_text"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pb_study"
+        android:layout_alignBottom="@+id/pb_study"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/pb_study"
+        android:layout_toRightOf="@+id/pb_study"
+        android:text="@string/study_text_msg" />
+
+    <ImageView
+        android:id="@+id/close_study_tip"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/study_msg_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/study_msg_text"
+        android:layout_toLeftOf="@+id/study_msg_text"
+        android:onClick="hideStudyTip"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <!--MOVIE-->
+    <ProgressBar
+        android:id="@+id/pb_movie"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/circular_shape"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="75"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/movie"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/pb_movie"
+        android:layout_alignLeft="@+id/pb_movie"
+        android:layout_alignTop="@+id/pb_movie"
+        android:layout_alignEnd="@+id/pb_movie"
+        android:layout_alignRight="@+id/pb_movie"
+        android:layout_alignBottom="@+id/pb_movie"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/movie_des"
+        android:onClick="showMovieTip"
+        app:srcCompat="@drawable/movie" />
+
+    <TextView
+        android:id="@+id/movie_msg_text"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pb_movie"
+        android:layout_alignBottom="@+id/pb_movie"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/pb_movie"
+        android:layout_toRightOf="@+id/pb_movie"
+        android:text="@string/movie_text_msg" />
+
+    <ImageView
+        android:id="@+id/close_movie_tip"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/movie_msg_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/movie_msg_text"
+        android:layout_toLeftOf="@+id/movie_msg_text"
+        android:onClick="hideMovieTip"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <!--GYM-->
+    <ProgressBar
+        android:id="@+id/pb_gym"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/circular_shape"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="45"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gym"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/pb_gym"
+        android:layout_alignLeft="@+id/pb_gym"
+        android:layout_alignTop="@+id/pb_gym"
+        android:layout_alignEnd="@+id/pb_gym"
+        android:layout_alignRight="@+id/pb_gym"
+        android:layout_alignBottom="@+id/pb_gym"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/gym_des"
+        android:onClick="showGymTip"
+        app:srcCompat="@drawable/gym" />
+
+    <TextView
+        android:id="@+id/gym_msg_text"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pb_gym"
+        android:layout_alignBottom="@+id/pb_gym"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/pb_gym"
+        android:layout_toRightOf="@+id/pb_gym"
+        android:text="@string/gym_text_msg" />
+
+    <ImageView
+        android:id="@+id/close_gym_tip"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gym_msg_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/gym_msg_text"
+        android:layout_toLeftOf="@+id/gym_msg_text"
+        android:onClick="hideGymTip"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <!--RESTAURANT-->
+    <ProgressBar
+        android:id="@+id/pb_restaurant"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/circular_shape"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="95"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/restaurant"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/pb_restaurant"
+        android:layout_alignLeft="@+id/pb_restaurant"
+        android:layout_alignTop="@+id/pb_restaurant"
+        android:layout_alignEnd="@+id/pb_restaurant"
+        android:layout_alignRight="@+id/pb_restaurant"
+        android:layout_alignBottom="@+id/pb_restaurant"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/restaurant_des"
+        android:onClick="showRestaurantTip"
+        app:srcCompat="@drawable/restaurant" />
+
+    <TextView
+        android:id="@+id/restaurant_msg_text"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pb_restaurant"
+        android:layout_alignBottom="@+id/pb_restaurant"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/pb_restaurant"
+        android:layout_toRightOf="@+id/pb_restaurant"
+        android:text="@string/restaurant_text_msg" />
+
+    <ImageView
+        android:id="@+id/close_restaurant_tip"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/restaurant_msg_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/restaurant_msg_text"
+        android:layout_toLeftOf="@+id/restaurant_msg_text"
+        android:onClick="hideRestaurantTip"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+</RelativeLayout>
